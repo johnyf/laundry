@@ -13,3 +13,8 @@ spyder
 # pydot
 pyparsing
 http://pydot.googlecode.com/files/pydot-1.0.28.tar.gz
+
+# other
+line-profiler
+pympler
+radon
