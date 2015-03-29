@@ -1,22 +1,6 @@
-# setup isolated virtualenv using MacPorts
 # to install cvxopt v1.1.7, linking to
 # GLPK and ATLAS provided by MacPorts
 
-envname=tulipdev
-
-if 0; then
-mkvirtualenv $envname
-pip install networkx
-pip install pyparsing
-pip install http://pydot.googlecode.com/files/pydot-1.0.28.tar.gz
-pip install ply
-pip install -q numpy
-pip install -q scipy
-pip install -q matplotlib
-
-pip install -q ipython
-pip install spyder
-fi
 export CVXOPT_BLAS_LIB="satlas,tatlas"
 export CVXOPT_BLAS_LIB_DIR="/opt/local/lib"
 export CVXOPT_LAPACK_LIB="lapack"

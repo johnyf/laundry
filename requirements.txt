@@ -1,0 +1,15 @@
+# spyder
+sphinx
+rope
+pyflakes
+pylint
+pep8
+pygments
+psutil
+pyzmq
+ipython
+spyder
+
+# pydot
+pyparsing
+http://pydot.googlecode.com/files/pydot-1.0.28.tar.gz

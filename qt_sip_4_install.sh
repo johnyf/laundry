@@ -39,14 +39,5 @@ python configure-ng.py
 time make
 make install
 
-# ===================
-# install spyder & dependencies
-# ===================
-pip install sphinx
-pip install rope
-pip install pyflakes
-pip install pylint
-pip install psutil
-pip install pyzmq
-pip install -I --allow-external spyder --egg spyder
-
+# install dev packages
+pip install -r requirements.txt
