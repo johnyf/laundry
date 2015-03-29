@@ -1,8 +1,13 @@
-venvname=clean_dev
+# ATTENTION: mkvirtualenv --always-copy
+# to avoid symlinked include/python2.7 that requires sudo
+venvname=dev
 
+set -e
 which bison
 which flex
 pip install mercurial
+mkdir -p temp
+cd temp
 
 # =================
 # install SIP4
@@ -10,8 +15,11 @@ pip install mercurial
 
 # link found from:
 #    http://www.riverbankcomputing.com/software/sip/download
-hg clone hg clone http://www.riverbankcomputing.com/hg/sip
-
+if [ -d "sip" ]; then
+    echo "sip already cloned."
+else
+    hg clone http://www.riverbankcomputing.com/hg/sip
+fi
 # installation instructions here:
 #    http://pyqt.sourceforge.net/Docs/sip4/installation.html
 cd sip
@@ -19,10 +27,12 @@ python build.py prepare
 python configure.py --incdir ~/.virtualenvs/$venvname/include/python2.7/
 time make
 make install
+cd ../
 
 # ================
 # install PyQt4
 # ================
+
 # download link found here:
 #    http://www.riverbankcomputing.com/software/pyqt/download
 select=mac # or x11
