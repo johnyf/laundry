@@ -1,3 +1,7 @@
+# setup isolated virtualenv using MacPorts
+# to install cvxopt v1.1.7, linking to
+# GLPK and ATLAS provided by MacPorts
+
 envname=tulipdev
 
 if 0; then
@@ -29,4 +33,3 @@ export CVXOPT_GLPK_LIB_DIR="/opt/local/lib"
 export CVXOPT_GLPK_INC_DIR="/opt/local/include"
 
 pip install cvxopt
-
