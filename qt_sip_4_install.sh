@@ -36,9 +36,12 @@ cd ../
 # download link found here:
 #    http://www.riverbankcomputing.com/software/pyqt/download
 select=mac # or x11
-curl -LO http://sourceforge.net/projects/pyqt/files/PyQt4/PyQt-4.11.1/PyQt-$select-gpl-4.11.1.tar.gz
-tar vzxf PyQt-*
-
+if [ -d "PyQt-mac-gpl-4.11.1" ]; then
+	echo "PyQt already downloaded."
+else
+	curl -LO http://sourceforge.net/projects/pyqt/files/PyQt4/PyQt-4.11.1/PyQt-$select-gpl-4.11.1.tar.gz
+	tar vzxf PyQt-*.tar.gz
+fi
 # http://pyqt.sourceforge.net/Docs/PyQt4/installation.html
 cd PyQt-*
 
