@@ -1,5 +1,6 @@
 # spyder
 sphinx
+nose
 rope
 pyflakes
 pylint
@@ -14,7 +15,11 @@ spyder
 pyparsing
 http://pydot.googlecode.com/files/pydot-1.0.28.tar.gz
 
-# other
+# dev
+coverage
+Cython
+GitPython
 line-profiler
+snakeviz
 pympler
 radon
