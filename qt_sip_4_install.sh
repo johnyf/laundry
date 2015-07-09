@@ -51,6 +51,7 @@ cd PyQt-*
 echo "yes" | python configure-ng.py
 time make
 make install
+cd ../..
 
 # install dev packages
 pip install -r requirements.txt
