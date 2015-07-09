@@ -48,7 +48,7 @@ cd PyQt-*
 # alternative:
 # curl -LO http://sourceforge.net/projects/pyqt/files/PyQt4/PyQt-4.11.1/PyQt-mac-gpl-4.11.1.tar.gz
 #
-python configure-ng.py
+echo "yes" | python configure-ng.py
 time make
 make install
 
