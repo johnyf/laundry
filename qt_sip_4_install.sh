@@ -12,8 +12,6 @@ cd temp
 # =================
 # install SIP4
 # =================
-
-# link found from:
 #    http://www.riverbankcomputing.com/software/sip/download
 if [ -d "sip" ]; then
     echo "sip already cloned."
@@ -26,7 +24,8 @@ fi
 # installation instructions here:
 #    http://pyqt.sourceforge.net/Docs/sip4/installation.html
 python build.py prepare
-python configure.py --incdir ~/.virtualenvs/$venvname/include/python2.7/
+python configure.py \
+    --incdir $HOME/.virtualenvs/$venvname/include/python2.7/
 time make
 make install
 cd ../
@@ -57,3 +56,4 @@ cd ../..
 
 # install dev packages
 pip install -r requirements.txt
+
