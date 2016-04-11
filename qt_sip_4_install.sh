@@ -31,28 +31,32 @@ make install
 cd ../
 
 # ================
-# install PyQt4
+# install PyQt5
 # ================
 
 # download link found here:
 #    http://www.riverbankcomputing.com/software/pyqt/download
-select=mac # or x11
-if [ -d "PyQt-mac-gpl-4.11.1" ]; then
+VERSION=5.5.1
+if [ -d "PyQt-gpl-$VERSION" ]; then
 	echo "PyQt already downloaded."
 else
-	curl -LO http://sourceforge.net/projects/pyqt/files/PyQt4/PyQt-4.11.1/PyQt-$select-gpl-4.11.1.tar.gz
-	tar vzxf PyQt-*.tar.gz
+	curl -LO http://sourceforge.net/projects/pyqt/files/PyQt5/PyQt-$VERSION/PyQt-gpl-$VERSION.tar.gz
+	tar vzxf PyQt-gpl-$VERSION.tar.gz
 fi
-# http://pyqt.sourceforge.net/Docs/PyQt4/installation.html
-cd PyQt-*
-
-# alternative:
-# curl -LO http://sourceforge.net/projects/pyqt/files/PyQt4/PyQt-4.11.1/PyQt-mac-gpl-4.11.1.tar.gz
-#
-echo "yes" | python configure-ng.py
+# http://pyqt.sourceforge.net/Docs/PyQt5/installation.html
+# `qmake` symlinked to MacPorts `qt5` at `/opt/local/libexec/qt5/bin/qmake`
+cd PyQt-gpl-$VERSION
+python configure.py \
+    --confirm-license \
+    --qmake=$HOME/bin/qmake \
+    --no-qml-plugin \
+    --no-designer-plugin
 time make
 make install
 cd ../..
+python -c "import PyQt5"
+python -c "from PyQt5 import QtGui"
+python -c "from PyQt5 import QtCore"
 
 # install dev packages
 pip install -r requirements.txt
