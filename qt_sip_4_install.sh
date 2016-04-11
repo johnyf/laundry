@@ -17,12 +17,14 @@ cd temp
 #    http://www.riverbankcomputing.com/software/sip/download
 if [ -d "sip" ]; then
     echo "sip already cloned."
+    cd sip
+    hg pull
 else
     hg clone http://www.riverbankcomputing.com/hg/sip
+    cd sip
 fi
 # installation instructions here:
 #    http://pyqt.sourceforge.net/Docs/sip4/installation.html
-cd sip
 python build.py prepare
 python configure.py --incdir ~/.virtualenvs/$venvname/include/python2.7/
 time make
