@@ -1,0 +1,22 @@
+[user]
+	name = Ioannis Filippidis
+	email = jfilippidis@gmail.com
+[core]
+	editor = vi
+	autocrlf = input
+[merge]
+	tool = opendiff
+[alias]
+	incoming = "!git remote update -p; git log ..@{u}"
+	last = log -1 HEAD
+	st = status
+	ci = commit -v
+	cm = commit -m
+	out = checkout
+[push]
+	default = simple
+[credential]
+	helper = osxkeychain
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
