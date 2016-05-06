@@ -1,0 +1,17 @@
+
+# Unicode I/O
+set input-meta on
+set output-meta on
+set convert-meta off
+
+# enable autocomplete (using up/down arrow keys)
+"\e[B": history-search-forward
+"\e[A": history-search-backward
+
+# ignore case when autocomplete file/directory name using tab
+set completion-ignore-case on
+
+# kill a whole line (using F3)
+"\eOR": kill-whole-line
+
+
