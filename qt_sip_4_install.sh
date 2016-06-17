@@ -3,8 +3,12 @@
 venvname=dev
 
 set -e
+echo "checking for bison..."
 which bison
+echo "bison found"
+echo "checking for flex..."
 which flex
+echo "flex found"
 pip install mercurial
 mkdir -p temp
 cd temp
