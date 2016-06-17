@@ -4,6 +4,7 @@ GitPython
 sphinx
 nose
 rednose
+mock
 tox
 # code analysis
 pyflakes
@@ -35,4 +36,3 @@ spyder
 # pydot
 pyparsing
 http://pydot.googlecode.com/files/pydot-1.0.28.tar.gz
-
