@@ -9,6 +9,7 @@ tox
 pyflakes
 pylint
 pep8
+autopep8
 radon
 coverage
 pipdeptree
