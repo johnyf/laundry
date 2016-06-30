@@ -20,9 +20,6 @@ vprof
 snakeviz
 pympler
 
-# spyder
-qtconsole
-qtawesome
 rope
 jedi
 nbconvert
@@ -31,7 +28,6 @@ pygments
 psutil
 pyzmq
 ipython
-spyder
 
 # pydot
 pyparsing
