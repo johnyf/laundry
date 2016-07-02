@@ -2,10 +2,13 @@
 Cython
 GitPython
 sphinx
+
+# testing
 nose
 rednose
 mock
 tox
+
 # code analysis
 pyflakes
 pylint
@@ -16,6 +19,7 @@ pep257
 radon
 coverage
 pipdeptree
+
 # profiling
 line-profiler
 vprof
