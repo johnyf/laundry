@@ -8,6 +8,7 @@ nose
 rednose
 mock
 tox
+check-manifest
 
 # code analysis
 pyflakes
