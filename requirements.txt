@@ -17,9 +17,11 @@ flake8
 pep8
 autopep8
 pep257
+jedi
 radon
 coverage
 pipdeptree
+vulture
 
 # profiling
 line-profiler
