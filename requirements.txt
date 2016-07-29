@@ -14,7 +14,7 @@ check-manifest
 pyflakes
 pylint
 flake8
-pep8
+pycodestyle
 autopep8
 pep257
 jedi
