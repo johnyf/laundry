@@ -1,0 +1,3 @@
+# list extensions of all untracked files
+git ls-files --others | perl -ne 'print $1 if m/\.([^.\/]+)$/' | sort -u
+
