@@ -12,6 +12,8 @@ check-manifest
 
 # code analysis
 pyflakes
+pylama
+pylama-pylint
 pylint
 flake8
 pycodestyle
