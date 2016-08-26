@@ -24,6 +24,7 @@ radon
 coverage
 pipdeptree
 vulture
+caniusepython3
 
 # profiling
 line-profiler
