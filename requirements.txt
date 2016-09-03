@@ -31,6 +31,9 @@ line-profiler
 vprof
 snakeviz
 pympler
+memory_profiler
+objgraph
+prospector
 
 rope
 jedi
