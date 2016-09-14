@@ -44,3 +44,6 @@ psutil
 pyzmq
 ipython
 
+# typesetting
+pybib
+
