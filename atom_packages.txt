@@ -4,6 +4,7 @@ autocomplete-paths@1.0.5
 autocomplete-python@1.8.26
 coverage@0.6.1
 doi2bib@0.1.0
+file-types@0.5.5
 git-blame@0.4.11
 git-diff-details@1.4.0
 git-history@3.2.0
