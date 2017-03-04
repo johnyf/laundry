@@ -18,6 +18,7 @@ pylint
 flake8
 pycodestyle
 autopep8
+pep8-naming
 pep257
 jedi
 radon
