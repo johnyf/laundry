@@ -2,6 +2,8 @@
 Cython
 GitPython
 sphinx
+twine
+markdown_toclify
 
 # testing
 nose
@@ -47,4 +49,4 @@ ipython
 
 # typesetting
 pybib
-
+restructuredtext-lint
