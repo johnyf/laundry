@@ -3,6 +3,7 @@ Cython
 GitPython
 sphinx
 twine
+auditwheel
 markdown_toclify
 
 # testing
