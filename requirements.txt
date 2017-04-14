@@ -5,6 +5,7 @@ sphinx
 twine
 auditwheel
 markdown_toclify
+grip
 
 # testing
 nose
