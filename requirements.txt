@@ -7,6 +7,7 @@ auditwheel
 markdown_toclify
 grip
 gitcheck
+logbook
 
 # testing
 nose
