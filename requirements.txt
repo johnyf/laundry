@@ -6,7 +6,7 @@ twine
 auditwheel
 markdown_toclify
 grip
-gitcheck
+git+git://github.com/badele/gitcheck.git
 logbook
 
 # testing
