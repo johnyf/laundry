@@ -3,7 +3,10 @@
 # Assumes no `python` appears in `$PATH`
 # earlier than `PYTHON_PATH`.
 #
-# On OS X, modify path to have native `gcc` first.
+# macOS:
+#   - modify path to have native `gcc` first.
+#   - git clone https://github.com/openssl/openssl
+#   - install OpenSSL to default location (`/usr/local/`)
 set -e
 # define yourself
 CFG_FILE=$HOME/.bashrc
