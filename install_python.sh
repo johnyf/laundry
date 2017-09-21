@@ -50,5 +50,4 @@ fi
 
 # install packages
 cd ../
-pip install global_requirements.txt
-
+pip install -r global_requirements.txt
