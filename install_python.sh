@@ -5,10 +5,10 @@
 #
 # On OS X, modify path to have native `gcc` first.
 set -e
-# define these
+# define yourself
 CFG_FILE=$HOME/.bashrc
-PYTHON_PATH=$HOME/python_2
-PYTHON_VERSION=2.7.11
+PYTHON_PATH=$HOME/python36
+PYTHON_VERSION=3.6.2
 # auto
 PYTHON_BIN=$PYTHON_PATH/bin
 PYTHON_LIB=$PYTHON_PATH/lib
@@ -22,15 +22,16 @@ source $CFG_FILE
 curl -LO https://www.python.org/ftp/python\
 /$PYTHON_VERSION/Python-$PYTHON_VERSION.tgz
 mkdir -p tmp
-tar xzf Python-2.7.11.tgz --directory tmp
-cd tmp/Python-2.7.11/
+tar xzf Python-*.tgz --directory tmp
+cd tmp/Python-*/
 # compile
-# make distclean
+make distclean
 ./configure --prefix=$PYTHON_PATH --enable-shared
 make -j4
-# make test -j4
-# install
+make test -j4
 make install
+
+ln -s $PYTHON_BIN/python3 $PYTHON_BIN/python
 hash python
 if [ $(command -v python) != "$PYTHON_BIN/python" ]; then
     echo "python not found where just installed,\
@@ -40,8 +41,11 @@ fi
 echo "done installing python"
 
 # fetch and install `pip`
-curl -LO https://bootstrap.pypa.io/get-pip.py
-python get-pip.py
+# unnecessary with latest python, which contains `pip`
+# curl -LO https://bootstrap.pypa.io/get-pip.py
+# python get-pip.py
+
+ln -s $PYTHON_BIN/pip3 $PYTHON_BIN/pip
 hash pip
 if [ $(command -v pip) != "$PYTHON_BIN/pip" ]; then
     echo "pip not found where just installed"
