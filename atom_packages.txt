@@ -71,3 +71,4 @@ wordcount
 file-icons
 regex-railroad-diagram
 language-smt-lib
+language-ignore
