@@ -22,3 +22,4 @@ wordcount
 file-icons
 language-smt-lib
 language-ignore
+up2date
