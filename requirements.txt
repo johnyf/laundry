@@ -8,6 +8,7 @@ markdown_toclify
 grip
 git+git://github.com/badele/gitcheck.git
 colored
+wordcloud
 
 # testing
 nose
