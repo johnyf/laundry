@@ -1,9 +1,14 @@
+# packaging
+pip
+setuptools
+wheel
+auditwheel
+twine
+
 # dev
 Cython
 GitPython
 sphinx
-twine
-auditwheel
 markdown_toclify
 grip
 git+git://github.com/badele/gitcheck.git
