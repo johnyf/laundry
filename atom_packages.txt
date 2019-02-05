@@ -4,6 +4,7 @@ highlight-selected
 language-cython
 language-dot
 language-haskell
+language-isabelle
 language-latex
 language-markdown
 language-ocaml
