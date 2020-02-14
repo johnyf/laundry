@@ -60,3 +60,5 @@ ipython
 # typesetting
 pybib
 restructuredtext-lint
+
+argcomplete
