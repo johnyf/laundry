@@ -40,7 +40,7 @@ vulture
 caniusepython3
 
 # profiling
-line-profiler
+git+ssh://git@github.com/rkern/line_profiler.git
 vprof
 snakeviz
 pympler
