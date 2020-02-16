@@ -1,5 +1,7 @@
 # to install cvxopt v1.1.7, linking to
 # GLPK and ATLAS provided by MacPorts
+#
+# port install atlas glpk lapack
 
 export CVXOPT_BLAS_LIB="satlas,tatlas"
 export CVXOPT_BLAS_LIB_DIR="/opt/local/lib"
@@ -17,3 +19,5 @@ export CVXOPT_GLPK_LIB_DIR="/opt/local/lib"
 export CVXOPT_GLPK_INC_DIR="/opt/local/include"
 
 pip install cvxopt
+python -c "import cvxopt.glpk"
+
