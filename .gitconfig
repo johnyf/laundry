@@ -4,6 +4,8 @@
 [core]
 	editor = vi
 	autocrlf = input
+[sequence]
+	editor = atom -w
 [merge]
 	tool = opendiff
 [alias]
