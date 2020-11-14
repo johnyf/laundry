@@ -41,7 +41,7 @@ caniusepython3
 pygount
 
 # profiling
-git+ssh://git@github.com/rkern/line_profiler.git
+line_profiler
 vprof
 snakeviz
 pympler
