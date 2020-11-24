@@ -13,6 +13,7 @@ markdown_toclify
 grip
 git+git://github.com/badele/gitcheck.git
 colored
+# `wordcloud` requires `matplotlib`
 wordcloud
 
 # testing
