@@ -40,6 +40,7 @@ pipdeptree
 vulture
 caniusepython3
 pygount
+chardet
 
 # profiling
 line_profiler
