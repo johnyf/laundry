@@ -5,8 +5,11 @@
 #
 # macOS:
 #   - modify path to have native `gcc` first.
-#   - git clone https://github.com/openssl/openssl
-#   - install OpenSSL to default location (`/usr/local/`)
+#   - either:
+#     - install OpenSSL using MacPorts, or
+#     - install OpenSSL from source:
+#       - git clone https://github.com/openssl/openssl
+#       - install OpenSSL to default location (`/usr/local/`)
 set -e
 # define yourself
 CFG_FILE=$HOME/.bashrc
