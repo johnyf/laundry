@@ -2,7 +2,7 @@
 	name = Ioannis Filippidis
 	email = jfilippidis@gmail.com
 [core]
-	editor = vi
+	editor = vim
 	autocrlf = input
 [sequence]
 	editor = atom -w
