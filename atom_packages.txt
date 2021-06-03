@@ -1,5 +1,6 @@
 file-types
 highlight-line
+highlight-nbsp
 highlight-selected
 language-cython
 language-dot
