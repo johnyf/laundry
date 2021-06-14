@@ -17,8 +17,7 @@ colored
 wordcloud
 
 # testing
-nose
-rednose
+pytest
 mock
 tox
 check-manifest
